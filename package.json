@@ -7,7 +7,7 @@
     "build": "rimraf ./build && tsc && npm run copy-files",
     "start:dev": "npx nodemon",
     "start": "npm run build && node build/index.js",
-    "copy-files": "copyfiles -u 1 src/db/*.json build/",
+    "copy-files": "copyfiles -u 1 src/assets/*.json build/",
     "lint": "eslint . --ext .ts",
     "test": "jest"
   },

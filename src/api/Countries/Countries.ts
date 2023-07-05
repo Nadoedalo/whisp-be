@@ -9,7 +9,7 @@ export default {
              * in that case it would look like this: const readFileAsync = promisify(fs.readFile); await readFileAsync;
              * Buuuuuuuut for a couple of examples I'm alright just returning a promise
             * */
-            fs.readFile(__dirname + '../../../db/countries.json', {
+            fs.readFile(__dirname + '../../../assets/countries.json', {
                 encoding: 'utf8',
             }, (err, data) => {
                 if(err) {
